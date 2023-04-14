@@ -1,0 +1,32 @@
+/*=============================== 
+MAIN
+================================*/
+
+/* Banner */
+.presentation__products {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/banner op2.jpg");
+  width: 100vw;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-left: 10%;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.presentation__products {
+  color: var(--white) ;
+  font-weight: 800;
+  font-family: var(--text);
+}
+
+.presentation__products {
+  color: var(--white) ;
+  font-weight: 500;
+  font-family: var(--text);
+}

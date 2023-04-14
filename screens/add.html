@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>SkateLand</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Author" content="Estefani Leon Osorio" />
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Special+Elite&display=swap"
+    rel="stylesheet" />
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/add.css" />
+
+</head>
+
+<body>
+
+  <!--==============================
+    HEADER & NAV
+    ===============================-->
+
+  <header class="header__container">
+
+    <!-- Logo -->
+    <div class="header__logo">
+      <a href="../index.html">
+        <img class="header__logo_img" src="../assets/img/logo.png" alt="logo-img" />
+        <span>SkateLand</span>
+      </a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search__bar" id="low__bar">
+      <input class="search__input" id="searcher" type="text" placeholder="Your search here..." data-searcher />
+      <img class="search__input__icon" src="../assets/img/search_glass.svg" alt="glass" />
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button>
+        <img class="menu__icon" src="../assets/img/menu.png" />
+      </button>
+      <div class="dropdown-content">
+        <a href="../index.html">Home</a>
+        <a href="#contact">Contact Us</a>
+        <a href="../index.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!--==============================
+    MAIN 
+    ===============================-->
+  <main>
+
+    <!-- Add -->
+    <form class="add" id="form">
+      <p class="add__tittle">
+        Add Product
+      </p>
+      <input class="add__input" name="img" id="img" type="img" data-type="img" placeholder="Image URL" required />
+      <span class="input-img-error"></span>
+      <input class="add__input" name="category" id="category" type="category" data-type="category" placeholder="Category" required />
+      <span class="input-category-error"></span>
+      <input class="add__input" name="nameProduct" id="nameProduct" type="nameProduct" data-type="nameProduct" placeholder="Product Name" required />
+      <span class="input-nameProduct-error"></span>
+      <input class="add__input" name="priceProduct" id="priceProduct" type="priceProduct" data-type="priceProduct" placeholder="Product Price" required />
+      <span class="input-priceProduct-error"></span>
+      <input class="add__input" name="description" id="description" type="description" data-type="description" placeholder="Description" required />
+      <span class="input-description-error"></span>
+      <button class="add__button">
+        Add Product
+      </button>
+    </form>
+  </main>
+
+  <!--==============================
+    FOOTER
+    ===============================-->
+
+  <!-- Link Tools -->
+  <footer>
+    <div class="left">
+      <div class="header__logo">
+        <img class="header__logo_img" src="../assets/img/logo.png" alt="logo-img" />
+        <span>SkateLand</span>
+      </div>
+      <a href="#">About Us.</a>
+      <a href="#">Privacy Policy.</a>
+      <a href="#">Loyalty Program.</a>
+      <a href="#">Our Shops.</a>
+      <a href="#">Be Franchisee.</a>
+      <a href="#">Advertise Here.</a>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="right" id="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/myyabjzo" method="POST" class="footer__form">
+        <input type="text" name="name" id="name" placeholder="Name" class="input" data-type="name" pattern=".{1,40}$"
+          required />
+        <span class="input-message-error"></span>
+        <textarea name="message" id="message" placeholder="Your message here..." class="textarea-input"
+          data-type="message" rows="8" required></textarea>
+        <span class="textarea-message-error"></span>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Created by
+      <a class="footer__portfolio" href="https://estefanileonosorio.netlify.app/">
+        Estefani León Osorio.
+      </a>
+    </p>
+    <p>©️ 2023</p>
+    <div class="socials__footer">
+      <a href="https://github.com/EstefaniLeon">
+        <img class="github__icon" src="../assets/img/logo-github.png" alt="github-logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/estefani-l-34a56a244/">
+        <img class="linkedin__icon" src="../assets/img/logo-linkedin.png" alt="linkedin-logo" />
+      </a>
+    </div>
+  </div>
+
+  <!--==============================
+    SCRIPT
+    ===============================-->
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</hml>

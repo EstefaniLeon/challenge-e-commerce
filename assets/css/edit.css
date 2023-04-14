@@ -1,0 +1,12 @@
+/*=============================== 
+MAIN
+================================*/
+
+/* Buttons */
+.edit__button {
+  background-color: var(--l_purple);
+}
+
+.trash__button {
+  background-color: var(--l_purple);
+}

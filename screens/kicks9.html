@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>SkateLand</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Author" content="Estefani Leon Osorio" />
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="/assets/img/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Special+Elite&display=swap"
+    rel="stylesheet" />
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/product_details.css" />
+
+</head>
+
+<body>
+
+  <!--==============================
+    HEADER & NAV
+    ===============================-->
+
+  <header class="header__container">
+
+    <!-- Logo -->
+    <div class="header__logo">
+      <a href="../index.html">
+        <img class="header__logo_img" src="../assets/img/logo.png" alt="logo-img" />
+        <span>SkateLand</span>
+      </a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search__bar" id="low__bar">
+      <input class="search__input" id="searcher" type="text" placeholder="Your search here..." data-searcher />
+      <img class="search__input__icon" src="../assets/img/search_glass.svg" alt="glass" />
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button>
+        <img class="menu__icon" src="../assets/img/menu.png" />
+      </button>
+      <div class="dropdown-content">
+        <a href="../index.html">Home</a>
+        <a href="#contact">Contact Us</a>
+        <a href="../screens/products.html">Products</a>
+      </div>
+    </div>
+  </header>
+
+  <!--==============================
+    MAIN 
+    ===============================-->
+  <main>
+
+    <!-- Top -->
+    <section class="top__details">
+      <span class="top__line_header">
+        <img src="../assets/img/Kicks9.jpg" alt="kicks-9" class="top__line_card-img" />
+      </span>
+      <div class="top__line_content">
+        <article class="top__line__card">
+          <h1 class="top-tittle">Kicks XYZ</h1>
+          <p class="top__line_card_price">$50.00</p>
+          <p class="top__line_card_more">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet
+            ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua
+            malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus
+            doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Similar Products -->
+    <section class="similar__prods">
+      <span class="similar__prods__header">
+        <h3 class="similar__prods__tittle">Similar Products</h3>
+      </span>
+      <div class="similar__prods__content">
+        <article class="similar__prods__card">
+          <img src="/assets/img/Kicks10.jpg" alt="kicks-10" class="similar__prods-img" />
+          <p class="similar__prods_name">Kicks XYZ</p>
+          <p class="similar__prods_card_price">$50.00</p>
+          <a href="/screens/kicks10.html" class="similar__prods_card_more">See product</a>
+        </article>
+        <article class="similar__prods__card">
+          <img src="/assets/img/Board1.jpg" alt="board-1" class="similar__prods-img" />
+          <p class="similar__prods_name">Board XYZ</p>
+          <p class="similar__prods_card_price">$60.00</p>
+          <a href="/screens/board1.html" class="similar__prods_card_more">See product</a>
+        </article>
+        <article class="similar__prods__card">
+          <img src="/assets/img/Board2.jpg" alt="board-2" class="similar__prods-img" />
+          <p class="similar__prods_name">Board XYZ</p>
+          <p class="similar__prods_card_price">$60.00</p>
+          <a href="/screens/board2.html" class="similar__prods_card_more">See product</a>
+        </article>
+        <article class="similar__prods__card">
+          <img src="/assets/img/Board3.jpg" alt="board-3" class="similar__prods-img" />
+          <p class="similar__prods_name">Board XYZ</p>
+          <p class="similar__prods_card_price">$60.00</p>
+          <a href="/screens/board3.html" class="similar__prods_card_more">See product</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!--==============================
+    FOOTER
+    ===============================-->
+
+  <!-- Link Tools -->
+  <footer>
+    <div class="left">
+      <div class="header__logo">
+        <img class="header__logo_img" src="../assets/img/logo.png" alt="logo-img" />
+        <span>SkateLand</span>
+      </div>
+      <a href="#">About Us.</a>
+      <a href="#">Privacy Policy.</a>
+      <a href="#">Loyalty Program.</a>
+      <a href="#">Our Shops.</a>
+      <a href="#">Be Franchisee.</a>
+      <a href="#">Advertise Here.</a>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="right" id="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/myyabjzo" method="POST" class="footer__form">
+        <input type="text" name="name" id="name" placeholder="Name" class="input" data-type="name" pattern=".{1,40}$"
+          required />
+        <span class="input-message-error"></span>
+        <textarea name="message" id="message" placeholder="Your message here..." class="textarea-input"
+          data-type="message" rows="8" required></textarea>
+        <span class="textarea-message-error"></span>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Created by
+      <a class="footer__portfolio" href="https://estefanileonosorio.netlify.app/">
+        Estefani León Osorio.
+      </a>
+    </p>
+    <p>©️ 2023</p>
+    <div class="socials__footer">
+      <a href="https://github.com/EstefaniLeon">
+        <img class="github__icon" src="../assets/img/logo-github.png" alt="github-logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/estefani-l-34a56a244/">
+        <img class="linkedin__icon" src="../assets/img/logo-linkedin.png" alt="linkedin-logo" />
+      </a>
+    </div>
+  </div>
+
+  <!--==============================
+    SCRIPT
+    ===============================-->
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</hml>

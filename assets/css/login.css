@@ -1,0 +1,86 @@
+/*=============================== 
+MAIN
+================================*/
+
+/* Banner */
+main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/banner op.jpg");
+  background-position: center center;
+  background-size: cover;
+  align-self: stretch;
+}
+
+/* Login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  width: 90vw;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 60vw;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--l_purple);
+  font-family: var(--text);
+  margin-bottom: 30px;
+  gap: 2rem;
+}
+
+.login>input,
+.form__add_input,
+.form__add_area {
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0 2rem;
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.login>input:focus {
+  border: 0.8px solid rgb(233, 163, 27);
+}
+
+.login>button,
+.form__add_button {
+  background-color: var(--l_purple);
+  color: var(--l_orange);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 2px 2px rgb(46 46 46);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login>button:hover {
+  transform: scale(1.05);
+  background-color: var(--d_orange);
+  color: var(--white);
+  transition: all 200ms linear;
+}
+
+.login__tittle {
+  font-family: var(--text);
+  font-size: 2rem;
+  text-decoration: none;
+  color:var(--d_orange);
+  font-weight: bold;
+  font-style: ExtraBold;
+  background-color: var(--l_purple);
+  border-radius: 10px;
+}
+
+.login__input {
+  margin-bottom: 2rem;
+  width: 80%;
+}
